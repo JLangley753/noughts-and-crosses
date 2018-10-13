@@ -7,12 +7,6 @@
   display: flex;
 }
 
-.status {
-  margin: 10px 0px 30px 0px;
-  font-size: 1.5em;
-  text-align: center;
-}
-
 .square {
   border: 1px solid grey;
   border-radius: 5px;
@@ -22,6 +16,7 @@
   justify-content: center;
   font-size: 4.2em;
   height: 70px;
+  overflow: hidden;
   position: relative;
   padding: 5px;
   margin: 7px;
@@ -29,10 +24,10 @@
   width: 70px;
 }
 
-.square:hover {
-  background: rgba(0,0,0,0.1);
+/*.square:hover {
+  background: rgba(0,0,0,0.05);
   transition: 0.5s ease;
-}
+}*/
 
 .button-wrap {
   display: flex;
@@ -46,15 +41,19 @@
   box-shadow: 3px 3px 1px 0.5px rgba(0,0,0,0.1);
   cursor: pointer;
   display: block;
+  font-size: 1.25em;
+  font-family: 'Montserrat';
   margin: 30px;
   overflow: hidden;
-  padding: 15px 10px;
+  padding: 5px;
+  height: 80px;
+  width: 80px;
   position: relative;
   transition: 0.3s ease;
 }
 
-.restart-button::after {
-  background: rgba(0,0,0,0.1);
+.restart-button::after, .square::after {
+  background: rgba(0,0,0,0.05);
   border: 1px solid white;
   content: "";
   display: block;
@@ -64,13 +63,31 @@
   left: 50%;
   position: absolute;
   transition: 0.5s ease;
-  transform: translateY(-50px) rotate(50deg);
-  width: 100%;
+  transform: translate(-25px, -50px) rotate(50deg);
+  width: 0%;
 }
 
-.restart-button:hover::after {
+.restart-button:hover::after, .square:hover::after {
   transition: 0.5s ease;
   left: 0;
   opacity: 1;
-  height: 300%;
+  height: 250%;
+  width: 170%;
+}
+
+.status {
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px 0.5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 4.2em;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  transition: 0.5s ease;
+  width: 262px;
 }
