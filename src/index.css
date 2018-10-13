@@ -1,7 +1,9 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 0px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
 }

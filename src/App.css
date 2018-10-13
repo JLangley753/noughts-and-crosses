@@ -1,4 +1,14 @@
-body {
-  display: inline-block;
-  margin: auto;
+.app {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+}
+
+.header, .board-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  color: greyy;
 }
