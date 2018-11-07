@@ -21,6 +21,7 @@
   padding: 5px;
   margin: 7px;
   transition: 0.5s ease;
+  vertical-align: middle;
   width: 70px;
 }
 
@@ -43,7 +44,8 @@
   display: block;
   font-size: 1.25em;
   font-family: 'Montserrat';
-  margin: 30px;
+  font-weight: bold;
+  margin: 25px;
   overflow: hidden;
   padding: 5px;
   height: 80px;
@@ -67,6 +69,10 @@
   width: 0%;
 }
 
+.restart-button:focus {
+  outline: none;
+}
+
 .restart-button:hover::after, .square:hover::after {
   transition: 0.5s ease;
   left: 0;
@@ -79,7 +85,7 @@
   border: 1px solid grey;
   border-radius: 5px;
   box-shadow: 3px 3px 1px 0.5px rgba(0,0,0,0.1);
-  cursor: pointer;
+  cursor: default;
   display: flex;
   justify-content: center;
   font-size: 4.2em;
